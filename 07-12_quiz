@@ -1,0 +1,66 @@
+## Quiz 7: Convolutional Neural Networks
+**Question 1:** How does a Convolutional Neural Network (CNN) differ from a fully connected neural network?
+**Answer:** CNNs use learnable filters (kernels) that are applied locally across the input, allowing them to capture spatial patterns with shared weights. In contrast, fully connected networks connect every input neuron to every output neuron, lacking this spatial awareness and having far more parameters.
+**Question 2:** What roles do pooling and activation functions play in CNNs?
+**Answer:** Activation functions (like ReLU) introduce non-linearity, allowing the network to learn complex patterns. Pooling layers (like MaxPooling) reduce the spatial dimensions of the feature maps, which decreases the number of parameters and makes the learned features more robust to small translations.
+**Question 3:** Why are CNNs well-suited for processing visual input in reinforcement learning?
+**Answer:** CNNs can directly process raw pixel data from an environment (like a game screen) and automatically extract hierarchical features (from edges to objects), allowing the reinforcement learning agent to learn a policy based on what it "sees."
+**Question 4:** What are some classic and popular CNN architectures used in computer vision?
+**Answer:** Foundational and popular architectures include AlexNet (which popularized deep CNNs), VGG (known for its simple, stacked 3x3 convolutions), ResNet (which introduced residual connections to train very deep models), and the Inception network (GoogLeNet).
+**Question 5:** Why did CNNs replace fully connected networks for image processing?
+**Answer:** Fully connected networks are not practical for images because they have too many parameters, leading to computational inefficiency and overfitting. CNNs solve this by using shared weights (in filters) and capturing local spatial relationships, making them far more efficient and effective for image data.
+## Quiz 8: Recurrent Neural Networks
+**Question 1:** What are Recurrent Neural Networks (RNNs) and what problems do they solve?
+**Answer:** RNNs are a type of neural network designed for processing sequential data (like text or time series). They maintain an internal hidden state that acts as a memory, allowing them to capture information from previous time steps to inform current predictions.
+**Question 2:** What are the different input-output architectures for RNNs?
+**Answer:** The main architectures are one-to-one (standard network), one-to-many (e.g., image captioning), many-to-one (e.g., sentiment analysis), and many-to-many (e.g., machine translation or video classification), which handle various sequence processing tasks.
+**Question 3:** How is an RNN "unrolled" across time steps?
+**Answer:** Unrolling is a visualization technique where the network is depicted as a sequence of copies, one for each time step. The hidden state from one step is passed to the next, with the same set of weights being applied at every step.
+**Question 4:** What makes training the hidden-to-hidden weights in an RNN difficult?
+**Answer:** The hidden-to-hidden weights are applied repeatedly at each time step. During backpropagation, this repeated multiplication can cause the gradients to either shrink to zero (vanishing gradients) or grow exponentially (exploding gradients), making it difficult to learn long-term dependencies.
+**Question 5:** What is the Exploding Gradient Problem in RNNs?
+**Answer:** It is a problem that occurs during training when the gradients of the loss function grow exponentially as they are propagated back through time. This leads to extremely large weight updates, causing the training process to become unstable and fail.
+## Quiz 9: Recursive Neural Network (RvNN)
+**Question 1:** What is a Recursive Neural Network (RvNN)?
+**Answer:** An RvNN is a type of neural network that applies the same set of weights recursively over a hierarchical, tree-like data structure. It's designed to learn representations of structured data, such as parse trees for natural language sentences.
+**Question 2:** How does a Recursive Neural Network (RvNN) differ from a Recurrent Neural Network (RNN)?
+**Answer:** RvNNs operate on hierarchical tree structures, processing inputs based on their syntactic or structural relationships. In contrast, RNNs process data in a linear sequence, typically based on time or position.
+**Question 3:** How does a Recursive Neural Network (RvNN) process input in a tree-like structure?
+**Answer:** It starts at the leaves of the tree and recursively applies a shared weight matrix at each parent node, combining the representations of its children to produce a new representation, continuing until it reaches the root.
+**Question 4:** How is backpropagation performed in a recursive neural network?
+**Answer:** This process is called Backpropagation Through Structure (BPTS). Error signals are propagated from the root of the tree down to the leaves, recursively calculating gradients for the weights at each node in the structure.
+**Question 5:** What is a main limitation of training Recursive Neural Networks?
+**Answer:** A primary challenge is that they require the input data to be pre-parsed into a tree structure. This can be a complex and error-prone step, and many types of data do not naturally fit into a hierarchical format.
+## Quiz 10: Reinforcement Learning
+**Question 1:** What are Heuristic Search algorithms?
+**Answer:** They are search algorithms that use domain-specific knowledge or an "educated guess" (a heuristic) to guide the search process, making it more efficient than uninformed methods by prioritizing more promising paths.
+**Question 2:** Why is Supervised Learning so prominent in machine learning today?
+**Answer:** It is prominent because it can achieve high accuracy on a wide range of tasks by learning directly from large amounts of labeled data, making it a reliable method for building models for prediction and classification.
+**Question 3:** What is the key difference between Reinforcement Learning and Supervised Learning?
+**Answer:** Reinforcement Learning agents learn optimal actions through trial-and-error interaction with an environment, guided by reward signals. Supervised Learning, on the other hand, learns from a static dataset of labeled examples with known correct answers.
+**Question 4:** What is the approximate size of the search space in the Tic-Tac-Toe game?
+**Answer:** The game is played on a 3x3 grid (9 cells). Since each cell can be X, O, or empty, the upper bound on the number of possible board configurations is 3⁹, which equals 19,683.
+**Question 5:** How can Reinforcement Learning learn optimal strategies to play against any opponent?
+**Answer:** It can learn through self-play, where the agent acts as its own opponent. By exploring vast numbers of game variations and being rewarded for winning, it discovers robust strategies that can generalize to play against a wide variety of unseen opponents.
+## Quiz 11: Dynamic Programming
+**Question 1:** What is Dynamic Programming?
+**Answer:** It is an optimization technique that solves complex problems by breaking them down into simpler, overlapping subproblems. It stores the solutions to these subproblems to avoid re-computation, improving efficiency.
+**Question 2:** What is the difference between top-down (memoization) and bottom-up (tabulation) approaches in Dynamic Programming?
+**Answer:** The top-down approach (memoization) starts with the main problem and uses recursion to solve subproblems, storing results as it goes. The bottom-up approach (tabulation) solves the smallest subproblems first and iteratively builds up to the main problem's solution.
+**Question 3:** How is dynamic programming used in reinforcement learning?
+**Answer:** It is used in model-based reinforcement learning to find optimal policies by iteratively evaluating value functions or policies using the Bellman equation, which requires a complete model of the environment's dynamics.
+**Question 4:** How does dynamic programming apply to speech recognition or part-of-speech tagging?
+**Answer:** It is used in algorithms like the Viterbi algorithm, which efficiently finds the most likely sequence of hidden states (e.g., words or grammatical tags) that could have produced a given sequence of observations (e.g., sounds or words).
+**Question 5:** What is a common pitfall in dynamic programming implementation?
+**Answer:** A common pitfall is incorrectly defining the state representation or the recurrence relation. This can lead to wrong results, infinite recursion in a top-down approach, or incorrect calculations in a bottom-up approach.
+## Quiz 12: Monte Carlo & Temporal Difference
+**Question 1:** What are Monte Carlo methods in reinforcement learning?
+**Answer:** They are algorithms that learn value functions by averaging the returns observed from complete, finished episodes of agent-environment interaction, without needing a model of the environment.
+**Question 2:** What is Temporal Difference (TD) learning?
+**Answer:** TD learning is a model-free reinforcement learning method where the agent updates its value estimates at each time step, using the observed reward plus its own current estimate of the next state's value (a process called bootstrapping).
+**Question 3:** What is "bootstrapping" in the context of Temporal Difference (TD) methods?
+**Answer:** Bootstrapping refers to the process of updating a value estimate based on other learned estimates, rather than waiting for the final, complete outcome of an episode.
+**Question 4:** What is the key difference between the update rules for TD(0) and Monte Carlo (MC)?
+**Answer:** The TD(0) update rule is performed at each step using the immediate reward and the estimated value of the next state. The Monte Carlo update rule is only performed at the end of a complete episode, using the full, actual return observed.
+**Question 5:** In which scenarios are Monte Carlo methods preferred over Temporal Difference methods?
+**Answer:** Monte Carlo methods are preferred in tasks that are strictly episodic (have a clear start and end) and where it is easy to collect full trajectories and their final outcomes. They are not suitable for continuous or very long tasks.
