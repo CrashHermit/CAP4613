@@ -34,5 +34,17 @@
 
 ---
 
+### Card 4: Popular CNN Architectures
+**Q**: What are examples of popular CNN architectures used in computer vision?
+
+**A**: 
+1. **AlexNet** (2012): First to use ReLU activation function; won ImageNet 2012; 5 convolutional + 3 fully connected layers
+2. **ResNet** (2015): Uses skip/residual connections that allow information to bypass layers; enables training of very deep networks (152+ layers); solves vanishing gradient problem
+3. **VGG** (2014): Stacks many 3×3 convolutional filters in a simple, uniform structure; good for transfer learning
+
+**Status**: ✅ Mastered
+
+---
+
 _More flashcards will be added as you complete questions..._
 

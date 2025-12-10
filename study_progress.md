@@ -2,7 +2,7 @@
 
 ## Quiz 07: Convolutional Neural Networks (CNNs)
 - **Status**: In Progress
-- **Score**: 3/6 completed (3 correct)
+- **Score**: 4/6 completed (4 correct)
 - **Last Reviewed**: Current session
 
 ### Question Results
@@ -35,8 +35,14 @@
 - **Areas to Review**: Could benefit from mentioning parameter efficiency and scalability
 - **Flashcard Ready**: Yes
 
-#### ⏳ Question 4: What are popular CNN architectures?
-- **Status**: Not yet answered
+#### ✅ Question 4: What are popular CNN architectures?
+- **Status**: CORRECT
+- **Key Points Covered**:
+  - ✅ AlexNet: First to use ReLU activation; won ImageNet 2012
+  - ✅ ResNet: Uses skip/residual connections; enables training of very deep networks (152+ layers); solves vanishing gradient problem
+  - ✅ VGG: Stacks many 3×3 convolutional filters in uniform structure
+- **Areas to Review**: None - good understanding of key architectures
+- **Flashcard Ready**: Yes
 
 #### ⏳ Question 5: Why did CNNs replace fully connected networks?
 - **Status**: Not yet answered
