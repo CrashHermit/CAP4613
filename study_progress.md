@@ -2,18 +2,20 @@
 
 ## Quiz 07: Convolutional Neural Networks (CNNs)
 - **Status**: In Progress
-- **Score**: 4/6 completed (4 correct)
+- **Score**: 1/15 completed (1 correct)
 - **Last Reviewed**: Current session
 
 ### Question Results
 
 #### ✅ Question 1: How does a CNN differ from a fully connected network?
 - **Status**: CORRECT (after guidance)
+- **Student Answer**: "CNNS have layers of filters that all feed into each other, whereas a fully connected network has layers but it doesn't have filters" → "With fcn the neruons connect everywhere and in the cnn the neuroens are connected to the next local input" → "It uses the same weights at each position"
+- **Attempts**: 3 (progressive understanding)
 - **Key Points Covered**:
-  - ✅ Local connectivity (receptive fields)
-  - ✅ Parameter sharing (same filters slide across image)
-  - ✅ Spatial preservation (maintains 2D structure)
-- **Areas to Review**: None - solid understanding
+  - ✅ Local connectivity (receptive fields) - neurons connect to local regions only
+  - ✅ Parameter sharing (same filter weights reused across entire image)
+  - ✅ Efficiency: dramatically fewer parameters than FCNs
+- **Areas to Review**: None - solid understanding achieved
 - **Flashcard Ready**: Yes
 
 #### ✅ Question 2: What roles do pooling and activation functions play?
