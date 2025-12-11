@@ -242,3 +242,4 @@ Final: p₂ captures negation effect!
 | **Scene Graph** | Hierarchical representation of image objects/relations |
 | **Shared Weights** | Same parameters used at all composition steps |
 
+

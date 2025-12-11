@@ -322,3 +322,4 @@ Off-policy: Learns optimal policy while following exploratory policy
 | **Works for continuing tasks** | No | Yes |
 | **Sample efficiency** | Lower | Higher |
 
+

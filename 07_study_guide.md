@@ -288,3 +288,4 @@ Each neuron connects to only a small local region, not entire input.
 | **Skip Connection** | Direct path for gradients (ResNet) |
 | **Batch Normalization** | Normalizes layer inputs for stable training |
 
+

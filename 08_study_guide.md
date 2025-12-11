@@ -235,3 +235,4 @@ Feedforward networks that process a **fixed-size window** of sequential input us
 | **TDNN** | Time-Delay Neural Network - feedforward with fixed window |
 | **POMDP** | Partially Observable MDP - requires memory for decisions |
 
+

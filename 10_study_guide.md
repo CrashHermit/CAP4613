@@ -271,3 +271,4 @@ Q(s, a) = Expected future rewards starting from state s, taking action a
 | **Self-play** | Agent learns by playing against itself |
 | **DQN** | Deep Q-Network - neural network for Q-learning |
 
+
